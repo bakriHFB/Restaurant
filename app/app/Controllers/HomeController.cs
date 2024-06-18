@@ -23,6 +23,16 @@ namespace app.Controllers
 
         public IActionResult Privacy()
         {
+            _logger.LogInformation("Index action started");
+            // Your controller logic here
+            _logger.LogInformation("Index action completed");
+            return View();
+        }
+        public IActionResult Show()
+        {
+            _logger.LogInformation("Index action started");
+            // Your controller logic here
+            _logger.LogInformation("Index action completed");
             return View();
         }
 
