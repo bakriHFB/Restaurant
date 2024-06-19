@@ -35,7 +35,14 @@ namespace app.Controllers
             _logger.LogInformation("Index action completed");
             return View();
         }
-
+        public IActionResult ShowProducts()
+        {
+            _logger.LogInformation("Index action started");
+            // show products logic & sourxb
+            _logger.LogInformation("Index action completed");
+            //get products from DB
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
